@@ -1,0 +1,28 @@
+name: 01 - Buoilding Blocks
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  job1:
+    name: echo hello world
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world action step
+        run: echo "Hello, world!"
+        run: echo "This is a test step"
+  job2:
+    name: echo bye world 2
+    runs-on: ubuntu-latest
+    steps:
+        step1:
+          name: bye world action step 1
+          run: echo "bye, world! 1"
+        step2:
+          name: bye world action step 2
+          run: echo "bye, world! 2"
