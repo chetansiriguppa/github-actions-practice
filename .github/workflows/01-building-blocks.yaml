@@ -20,9 +20,7 @@ jobs:
     name: echo bye world 2
     runs-on: ubuntu-latest
     steps:
-        step1:
-          name: bye world action step 1
-          run: echo "bye, world! 1"
-        step2:
-          name: bye world action step 2
-          run: echo "bye, world! 2"
+        -name: bye world action step 1
+         run: echo "bye, world! 1"
+        -name: bye world action step 2
+         run: echo "bye, world! 2"
