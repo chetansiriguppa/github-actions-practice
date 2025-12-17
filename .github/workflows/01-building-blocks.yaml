@@ -22,6 +22,7 @@ jobs:
     steps:
         - name: bye world action step 1
           run: echo "bye, world! 1"
-        - name: bye world action step 2 |
-          run: echo "fail, world! 2"
-               exit 1
+        - name: bye world action step 2
+          run: |
+                echo "fail, world! 2"
+                exit 1
